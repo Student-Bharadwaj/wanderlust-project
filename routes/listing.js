@@ -13,6 +13,8 @@ const upload = multer({ storage });
 router
   .route("/")
   .get(wrapAsync(listingController.index))
+  .get(wrapAsync(listingController.index))
+
   .post(
     validateListing,
     upload.single("listing[image]"),
