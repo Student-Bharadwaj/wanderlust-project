@@ -40,7 +40,7 @@
  
 
 
-   <div class="col-8 offset-2">
+   <div class="col-md-8 offset-2">
     <hr>
     <% if(currUser) { %>
     <h4>Leave a review:</h4>
@@ -81,7 +81,7 @@
     <p><b>All reviews:</b></p>
     <% for(review of listing.reviews){ %>
       
-      <div class="card col-5 ms-3 mb-3  style="width: 18rem;">
+      <div class="card col-md-5 ms-3 mb-3  style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">@<%= review.author.username %></h5>
           <p class="starability-result" data-rating="<%= review.rating %>">
